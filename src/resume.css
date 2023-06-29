@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.resume{
+    padding: 40px;
+    /* width: 100%; */
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.top{
+    display: flex;
+    gap: 70px;
+}
+.namePart{
+    padding-top: 10px;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.below{
+    display: flex;
+    gap: 20px;
+}
+.education{
+    width: 280px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.skills ul{
+    width: 170px;
+}
+.workExperience{
+    width: 650px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+ul{
+    padding-left: 20px;
+
+}
+.objective{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.research{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
