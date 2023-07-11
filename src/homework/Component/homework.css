@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cereals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homework{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foods{
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+.vegetable{
+    padding-top: 20px;
+    text-align: center;
+}
+.vegetable h1{
+    margin-bottom: 20px;
+}
+.vegetableHold{ 
+    /* width: 500px; */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.vegetableName{
+    border: 1px solid black;
+    /* width: 210px; */
+    /* height: 210px; */
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 10px;
+}
+.messi{
+    /* width: 200px;     */
+    padding: 5px;
+    /* height: 200px;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vegetableName img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
