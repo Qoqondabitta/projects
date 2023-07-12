@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 .cereals{
+    margin-top: 440px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .homework{
     width: 1200px;
