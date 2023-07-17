@@ -1,13 +1,14 @@
 import React from "react";
-import "./navbar.css"
-import {Container, Image, Login, List, ListItem, Link, ContactList, ContactLink} from "./navbar"
+import "./navbar.css";
+import {Container, Image, Login, List, ListItem, Link, ContactList, ContactLink} from "./navbar";
+import Logo from "../Assets/logo.png";
 class Navbar extends React.Component{
     render(){
         return(
             <div>
                 <div className="Navbar">
                     <Container>
-                        <Image src="../Assets/logo.png" alt="" />
+                        <Image src={Logo} alt="" />
                         <List>
                             <ListItem><Link href="#Home">Home</Link></ListItem>
                             <ListItem><Link href="#Services">Properties</Link></ListItem>

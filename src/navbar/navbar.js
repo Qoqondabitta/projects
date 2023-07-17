@@ -3,7 +3,7 @@ import {styled} from "styled-components"
 const Container = styled.div`
     background: #0D263B;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 10px;
     padding-bottom: 10px;
 `
@@ -16,7 +16,8 @@ const Login = styled.button`
     color: #FFF;
     background: transparent;
     border: 1px solid #FFF;
-    border-radius: 2px;    
+    border-radius: 2px; 
+    cursor: pointer;   
 `
 const List = styled.ul`
     display: flex;
@@ -32,13 +33,13 @@ const ContactList = styled(List)`
     background: #FFF;
     border: 1px solid #0D263B;
     border-radius: 2px; 
-    padding: 10px 50px 10px 10px;
-    margin-top: 5px;
+    padding: 10px 60px 10px 5px;
+    margin-top:1px;
     transition: all 2s;
 `
-const ListItem = styled.li`
+const ListItem = styled.p`
     font-size: 16px;
-    list-style-type: none;
+    // list-style-type: none;
     cursor: pointer;
 `
 const Link = styled.a`
@@ -47,6 +48,7 @@ const Link = styled.a`
 `
 const ContactLink = styled(Link)`
     color: #0D263B; 
+    font-size: 20px;
     &:hover{
         transform: scale(1.15)
         color: red;
