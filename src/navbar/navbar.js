@@ -1,6 +1,8 @@
 import {styled} from "styled-components"
 
+
 const Container = styled.div`
+    position: relative;
     background: #0D263B;
     display: flex;
     justify-content: space-around;
@@ -21,9 +23,36 @@ const Container = styled.div`
 
     }
 `
+const Box = styled.div`
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 159px;
+    height: 216px;
+    color: #0D263B;
+`
 
+
+const Social = styled.div`
+    display: flex;
+    gap: 26px;
+    position: absolute;
+    bottom: 0;
+    width: 159px;
+`
+const SocialIcon = styled.div`
+    position: relative;
+    z-index: 200000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 24px;
+    border-radius: 3px;
+    opacity: 0.10000000149011612;
+    background: #0D263B;
+`
 const Image = styled.img`
-    color: white;
 `
 const Burger = styled(Image)`
     height: 16px;
@@ -39,10 +68,22 @@ const Burger = styled(Image)`
         display: flex;
     };
 `
-// const BurgerMenu = styled.input`
-    
 
-// `
+const BurgerMenu = styled.div`
+    padding-left: 16px;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: white;
+`
 const Login = styled.button`
     padding: 12px 40px 12px 40px;
     color: #FFF;
@@ -110,4 +151,9 @@ const ContactLink = styled(Link)`
         color: red;
     }
 `
-export {Container, Image, Burger, BurgerMenu, Login, List, ListItem, Link, ContactList, ContactLink} 
+const BurgerList = styled(ListItem)`
+    font-size: 18px;
+    line-height: 20px;
+    
+`
+export {Container, Image, Burger, BurgerMenu, Login, List, ListItem, Link, ContactList, ContactLink, Box, Social, SocialIcon, BurgerList} 
