@@ -10,14 +10,15 @@ const Container = styled.div`
     @media screen and (max-width: 375px){
         justify-content: center;
         gap: 50px;
-    }
+    };
     @media screen and (max-width: 425px){
-        justify-content: center;
-        gap: 50px;
-    }
+        justify-content: space-between;
+    };
+    @media screen and (max-width: 525px){
+        justify-content: space-around;
+    };
     @media screen and (max-width: 768px){
-        justify-content: center;
-        gap: 50px;
+
     }
 `
 
@@ -34,11 +35,14 @@ const Burger = styled(Image)`
     @media screen and (max-width: 425px){
         display: flex;
     };
+    @media screen and (max-width: 525px){
+        display: flex;
+    };
 `
-const BurgerMenu = styled.input`
+// const BurgerMenu = styled.input`
     
 
-`
+// `
 const Login = styled.button`
     padding: 12px 40px 12px 40px;
     color: #FFF;
@@ -48,13 +52,16 @@ const Login = styled.button`
     cursor: pointer; 
     @media screen and (max-width: 375px){
         display: none;
-    }  
+    }; 
     @media screen and (max-width: 425px){
         display: none;
-    }  
+    };
+    @media screen and (max-width: 525px){
+        display: none;
+    };   
     @media screen and (max-width: 768px){
         padding: 6px 20px 6px 20px;
-    }
+    };
 `
 const List = styled.ul`
     display: flex;
@@ -66,6 +73,9 @@ const List = styled.ul`
     @media screen and (max-width: 425px){
         display: none;
     }
+    @media screen and (max-width: 525px){
+        display: none;
+    }  
     @media screen and (max-width: 769px){
         gap: 30px;
     }

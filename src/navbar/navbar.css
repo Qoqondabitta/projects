@@ -28,3 +28,12 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 525px){
+    .Burger{
+        display: block;
+    }
+    .loginImage{
+        display: flex;
+    }
+}
