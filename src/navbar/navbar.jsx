@@ -1,13 +1,17 @@
 import React from "react";
 import "./navbar.css";
-import {Container, Image, Login, List, ListItem, Link, ContactList, ContactLink} from "./navbar";
+import {Container, Image, Burger,  BurgerMenu, Login, List, ListItem, Link, ContactList, ContactLink} from "./navbar";
 import Logo from "../Assets/logo.png";
+import NavBurger from "../Assets/nav.png"
+import UserLogin from "../Assets/login.png"
 class Navbar extends React.Component{
     render(){
         return(
             <div>
                 <div className="Navbar">
                     <Container>
+                        <Burger className="Burger" src={NavBurger} />
+                        {/* <Input type="text" place > */}
                         <Image src={Logo} alt="" />
                         <List>
                             <ListItem><Link href="#Home">Home</Link></ListItem>
@@ -22,6 +26,7 @@ class Navbar extends React.Component{
                             </ListItem>
                         </List>
                         <Login>Login</Login>
+                        <Image className="loginImage" src={UserLogin} />
                     </Container>
                 </div>
             </div>

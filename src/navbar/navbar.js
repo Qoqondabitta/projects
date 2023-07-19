@@ -4,12 +4,40 @@ const Container = styled.div`
     background: #0D263B;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    @media screen and (max-width: 375px){
+        justify-content: center;
+        gap: 50px;
+    }
+    @media screen and (max-width: 425px){
+        justify-content: center;
+        gap: 50px;
+    }
+    @media screen and (max-width: 768px){
+        justify-content: center;
+        gap: 50px;
+    }
 `
 
 const Image = styled.img`
     color: white;
+`
+const Burger = styled(Image)`
+    height: 16px;
+    width: 20px;
+    display: none;
+    @media screen and (max-width: 375px){
+        display: flex;
+    };
+    @media screen and (max-width: 425px){
+        display: flex;
+    };
+`
+const BurgerMenu = styled.input`
+    
+
 `
 const Login = styled.button`
     padding: 12px 40px 12px 40px;
@@ -17,12 +45,30 @@ const Login = styled.button`
     background: transparent;
     border: 1px solid #FFF;
     border-radius: 2px; 
-    cursor: pointer;   
+    cursor: pointer; 
+    @media screen and (max-width: 375px){
+        display: none;
+    }  
+    @media screen and (max-width: 425px){
+        display: none;
+    }  
+    @media screen and (max-width: 768px){
+        padding: 6px 20px 6px 20px;
+    }
 `
 const List = styled.ul`
     display: flex;
     align-items: center;
     gap: 64px;
+    @media screen and (max-width: 375px){
+        display: none;
+    }
+    @media screen and (max-width: 425px){
+        display: none;
+    }
+    @media screen and (max-width: 769px){
+        gap: 30px;
+    }
 `
 const ContactList = styled(List)`
     flex-direction: column;
@@ -54,4 +100,4 @@ const ContactLink = styled(Link)`
         color: red;
     }
 `
-export {Container, Image, Login, List, ListItem, Link, ContactList, ContactLink} 
+export {Container, Image, Burger, BurgerMenu, Login, List, ListItem, Link, ContactList, ContactLink} 

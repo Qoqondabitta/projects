@@ -6,3 +6,25 @@
 .Dropdown:hover .ContactList{
     display: flex;
 }
+
+.loginImage{
+    display: none;
+}
+
+
+@media screen and (max-width: 375px) {
+    .Burger{
+        display: block;
+    }
+    .loginImage{
+        display: flex;
+    }
+}
+@media screen and (max-width: 425px) {
+    .Burger{
+        display: block;
+    }
+    .loginImage{
+        display: flex;
+    }
+}
