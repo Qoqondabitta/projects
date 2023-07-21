@@ -1,11 +1,19 @@
 import {styled} from "styled-components"
 
+const Wrap = styled.div`
+    width: 100%;
+    margin: auto;
+    background: #0D263B;
+`
 
 const Container = styled.div`
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
     position: relative;
     background: #0D263B;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -19,8 +27,9 @@ const Container = styled.div`
     @media screen and (max-width: 525px){
         justify-content: space-around;
     };
-    @media screen and (max-width: 768px){
-
+    @media screen and (max-width: 1180px){
+        padding-left: 15px;
+        padding-right: 15px;
     }
 `
 const Box = styled.div`
@@ -156,4 +165,4 @@ const BurgerList = styled(ListItem)`
     line-height: 20px;
     
 `
-export {Container, Image, Burger, BurgerMenu, Login, List, ListItem, Link, ContactList, ContactLink, Box, Social, SocialIcon, BurgerList} 
+export {Wrap, Container, Image, Burger, BurgerMenu, Login, List, ListItem, Link, ContactList, ContactLink, Box, Social, SocialIcon, BurgerList} 

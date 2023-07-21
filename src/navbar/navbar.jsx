@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import {Container, Image, Burger,  BurgerMenu, Social, SocialIcon, BurgerList, Login, List, ListItem, Link, ContactList, ContactLink, Box} from "./navbar";
+import {Container, Image, Burger,  BurgerMenu, Social, SocialIcon, BurgerList, Login, List, ListItem, Link, ContactList, ContactLink, Box, Wrap} from "./navbar";
 import Logo from "../Assets/logo.png";
 import NavBurger from "../Assets/nav.png"
 import UserLogin from "../Assets/login.png"
@@ -14,7 +14,7 @@ class Navbar extends React.Component{
     }
     render(){
         return(
-            <div>
+            <Wrap>
                 <div className="Navbar">
                     <Container>
                         <Burger className="Burger" src={NavBurger} onClick={ () => this.setState({display: !this.state.display}) } />
@@ -57,7 +57,7 @@ class Navbar extends React.Component{
                         <Image className="loginImage" src={UserLogin} />
                     </Container>
                 </div>
-            </div>
+            </Wrap>
         )
     }
 }
