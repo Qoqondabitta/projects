@@ -8,7 +8,7 @@ const Container = styled.div`
     @media screen and (max-width: 375px) {
         width: 343px;
         height: 142px;
-        margin-top: 508px;
+        margin: 508px auto 0 auto;
         padding: 24px;
         border-radius: 3px;
         background: #FFF;
@@ -20,6 +20,7 @@ const Container = styled.div`
         padding: 24px;
         border-radius: 3px;
         background: #FFF;
+        margin: 508px auto 0 auto;
     }
     @media screen and (max-width: 525px) {
         width: 343px;
@@ -68,6 +69,9 @@ const Wrap = styled.div`
         width: 343px;
         row-gap: 20px;
         flex-wrap: wrap;
+    }
+    @media screen and (max-width: 1024px){
+        
     }
 `
 const ButtonWrap = styled.div`
@@ -124,6 +128,7 @@ const Buttons = styled.button`
     @media screen and (max-width: 768px) {
         display: flex;
         align-items: center;
+        width: 145px;
         padding: 12px 40px;
         align-items: center;
         gap: 8px;
@@ -131,7 +136,6 @@ const Buttons = styled.button`
     @media screen and (max-width: 1180px) {
         display: flex;
         align-items: center;
-        width: 160px;
         padding: 12px 40px;
         align-items: center;
         gap: 8px;
@@ -146,7 +150,7 @@ const InputContainer = styled.div`
     border-radius: 2px;
     border: 1px solid var(--border, #E6E9EC);
     @media screen and (max-width: 375px) {
-        width: 343px;
+        width: 100%;
         padding: 6px 0;
         border-bottom: 2px solid #E6E9EC;
         border-left: transparent;
@@ -154,7 +158,7 @@ const InputContainer = styled.div`
         border-right: transparent;
     }
     @media screen and (max-width: 425px) {
-        width: 343px;
+        width: 100%;
         padding: 6px 0;
         border-bottom: 2px solid #E6E9EC;
         border-left: transparent;
@@ -162,7 +166,7 @@ const InputContainer = styled.div`
         border-right: transparent;
     }
     @media screen and (max-width: 525px) {
-        width: 343px;
+        width: 100%;
         padding: 6px 0;
         border-bottom: 2px solid #E6E9EC;
         border-left: transparent;
@@ -170,13 +174,14 @@ const InputContainer = styled.div`
         border-right: transparent;
     }
     @media screen and (max-width: 768px) {
-        width: 343px;
+        width: 90%;           
         padding: 6px 0;
         border-bottom: 2px solid #E6E9EC;
         border-left: transparent;
         border-top: transparent;
         border-right: transparent;
     }
+
 `
 const FilterContainer = styled.div`
     position: absolute;
@@ -192,6 +197,14 @@ const FilterContainer = styled.div`
         position: inherit;
         margin-top: -95px;
     }
+    @media screen and (max-width: 768px) {
+        width: 335px;
+        position: inherit;
+        margin-top: -95px;
+    }
+    @media screen and (max-width: 1024px){
+        margin-right: 15px;
+    }
 `
 const Details = styled.div`
     height: 325px;
@@ -200,7 +213,7 @@ const Details = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    @media screen and (max-width: 525px) {
+    @media screen and (max-width: 768px) {
         padding: 10px;
     }
 `
@@ -213,7 +226,7 @@ const Datas = styled.div`
 const InputLines = styled.div`
     display: flex;
     gap: 20px;
-    @media screen and (max-width: 525px) {
+    @media screen and (max-width: 768px) {
         flex-wrap: wrap;
     }
 ` 
@@ -232,7 +245,7 @@ const InputFilters = styled.input`
     border-radius: 2px;
     border: 1px solid #E6E9EC;
     outline: none;
-    @media screen and (max-width: 525px) {
+    @media screen and (max-width: 768px) {
         width: 90px;
         height: 25px;
         padding: 5px;
