@@ -185,13 +185,13 @@ const InputContainer = styled.div`
 `
 const FilterContainer = styled.div`
     position: absolute;
-    top: 100%;
+    top: 110%;
     right: 0;
     max-width: 920px;
     width: 100%
     height: 409px;
     border-radius: 5px;
-    background: red;
+    background: #fff;
     @media screen and (max-width: 525px) {
         width: 350px;
         position: inherit;

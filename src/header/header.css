@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+h1{
+    color: rgba(128, 128, 128, 0.392);
+    background-repeat: no;
+}
