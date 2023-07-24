@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Hcvtutorial from './context/Homewrok/HomeContext/body';
+// import Hcvtutorial from './context/Homewrok/HomeContext/body';
+import Localstorage from './localstorage/localstorage';
 // import HomeworkReduce from './reducer/homeworkReduce/homeworkReduce';
 // import Header from './header/header.jsx';
 // import { Navbar } from './navbar/navbar.jsx';
@@ -18,7 +19,7 @@ root.render(
     <Filter />
     <Header />
     <Reducer /> */}
-    <Hcvtutorial />    
+    <Localstorage />    
   </React.StrictMode>
 );
 
