@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 // localStorage.setItem("aim", "perfectness")
 // localStorage.setItem("aim", JSON.stringify({}))
 export const Localstorage = () => {
-    const [aim, setAim] = useState(localStorage.getItem("aim"))
+    // const [aim, setAim] = useState(localStorage.getItem("aim"))
     // const [digit, setDigit] = useState(localStorage.getItem("digit"))
     // const Plus = ()=>{
     //   localStorage.setItem("digit")
@@ -13,7 +13,7 @@ export const Localstorage = () => {
     // }
   return (
     <div>
-        <h1>Localstorage</h1>
+        {/* <h1>Localstorage</h1> */}
         {/* <h2>{localStorage.getItem("digit")}</h2> */}
         {/* <h2>{JSON.parse(localStorage.getItem("aim")).name}</h2> */}
         <input type="text" onChange={ ({target:{value}}) => {
@@ -28,4 +28,4 @@ export const Localstorage = () => {
   )
 }
 
-export default Localstorage
+// export default Localstorage
