@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Root2 from './contextCopy/root';
 // import Hcvtutorial from './context/Homewrok/HomeContext/body';
-import Localstorage from './localstorage/localstorage';
+// import Localstorage from './localstorage/localstorage';
 // import HomeworkReduce from './reducer/homeworkReduce/homeworkReduce';
 // import Header from './header/header.jsx';
 // import { Navbar } from './navbar/navbar.jsx';
@@ -18,8 +19,8 @@ root.render(
     {/* <Navbar />
     <Filter />
     <Header />
-    <Reducer /> */}
-    <Localstorage />    
+     */}
+    <Root2 />    
   </React.StrictMode>
 );
 

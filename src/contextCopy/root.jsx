@@ -1,15 +1,15 @@
 import React from 'react'
 import Wrap from './index'
-import { StudentContext, StudentList } from './context'
+import MainContext from './context'
 
-export const Root = () => {
+export const Root2 = () => {
   return (
     <div>
-      <StudentList>
+      <MainContext>
         <Wrap />
-      </StudentList>
+      </MainContext>            
     </div>
   )
 }
 
-export default Root
+export default Root2
