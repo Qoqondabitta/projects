@@ -11,6 +11,13 @@ const Holder =styled.div`
     background-size: cover;
     background: rgba(0, 0, 0, 0.65);
 `
+const Black = styled.div`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+`
 const Box = styled.div`
     width: 1376px;
     margin: 0 auto;
@@ -84,8 +91,8 @@ const Read = styled.button`
     border: 1px solid #FFF;
     background: transparent;
     color: #fff;
-    transition: all 2s;
-    & : hover {
+    transition: all 0.5s;
+    &:hover {
         transform: scale(1.15)
     }
 `
