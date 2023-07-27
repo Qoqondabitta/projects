@@ -12,7 +12,7 @@ import ReactDOM from 'react-dom/client';
 // import Crud from "./crud/index.jsx";
 // import Eight from './functionalComponents/index.jsx';
 // import Lesson8 from './functionalComponents/homework.jsx';
-import Memo from './memo/index';
+import Memo from './memo/homework/index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
