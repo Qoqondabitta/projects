@@ -1,9 +1,7 @@
 import React from 'react'
 
-export const Count = () => {
-  return (
-    <div>Count</div>
-  )
+export const Count = (props) => {
+  return <span>{props.count}</span>
 }
 
 export default Count
