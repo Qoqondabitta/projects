@@ -1,16 +1,12 @@
-import React from 'react'
+import React, {useMemo} from 'react'
 
 export const Isfive = (props) => {
-    const getData = () => {
-        let i = 0;
-        while(i < 1000000){
-            i++
-        }
+    const getData = useMemo( () => {
         if( props.count === 5 ) return "five digit"
         else return "not five digit"
-    }
+    }, [props.count] )
   return (
-    <div>{getData()}</div>
+    <div>{getData}</div>
   )
 }
 

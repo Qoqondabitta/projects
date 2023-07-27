@@ -13,7 +13,7 @@ export const Memo = () => {
         <Count id={1} count={count} />
         <div style={{display: "flex", gap: "15px"}}></div> <br />
         <button onClick={ () => setCount1( count1 + 1 ) }>Plus</button>
-        <Count id={1} count={count1} />
+        <Count id={2} count={count1} />
         <Isfive count={count1} />
     </div>
   )
