@@ -12,16 +12,15 @@ import ReactDOM from 'react-dom/client';
 // import Crud from "./crud/index.jsx";
 // import Eight from './functionalComponents/index.jsx';
 // import Lesson8 from './functionalComponents/homework.jsx';
-import Memo from './memo/homework/index';
+// import Memo from './memo/homework/index';
+import UseRef from './useRef';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* <Navbar />
-    <Filter />
-    <Header /> */}
+  // <React.StrictMode>
+
     
-    <Memo />    
-  </React.StrictMode>
+    <UseRef />    
+  // </React.StrictMode>
 );
 
