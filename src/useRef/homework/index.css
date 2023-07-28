@@ -1,0 +1,28 @@
+*{
+
+}
+.container{ 
+        width: 800px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 150px auto;
+        overflow: hidden;
+        background-color: red;
+}
+
+.container img{
+    width: 600px;
+    height: 300px;
+    flex-shrink: 0;
+    object-fit: cover;
+    /* object-position: top; */
+}
+
+#two{
+    width: 600px;
+    height: 300px;
+}
+

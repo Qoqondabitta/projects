@@ -14,6 +14,7 @@ import ReactDOM from 'react-dom/client';
 // import Lesson8 from './functionalComponents/homework.jsx';
 // import Memo from './memo/homework/index';
 import UseRef from './useRef';
+// import Latta from './useRef/homework';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
