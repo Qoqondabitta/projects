@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Fetch from './fetch';
 // import Root2 from './contextCopy/root';
 // import Hcvtutorial from './context/Homewrok/HomeContext/body';
 // import Localstorage from './localstorage/localstorage';
@@ -13,7 +14,7 @@ import ReactDOM from 'react-dom/client';
 // import Eight from './functionalComponents/index.jsx';
 // import Lesson8 from './functionalComponents/homework.jsx';
 // import Memo from './memo/homework/index';
-import UseRef from './useRef';
+// import UseRef from './useRef';
 // import Latta from './useRef/homework';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +22,7 @@ root.render(
   // <React.StrictMode>
 
     
-    <UseRef />    
+    <Fetch />    
   // </React.StrictMode>
 );
 
