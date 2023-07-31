@@ -16,14 +16,16 @@ import ReactDOM from 'react-dom/client';
 // import Memo from './memo/homework/index';
 // import UseRef from './useRef';
 // import Latta from './useRef/homework';
-import HomeFetch from './fetch/homeFetch';
+// import HomeFetch from './fetch/homeFetch';
+// import Axios from './axios/axios';
+import Root from './axios/root';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
 
     
-    <HomeFetch />    
+    <Root />    
   // </React.StrictMode>
 );
 
