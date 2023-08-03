@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    padding: 5px;
+    display: flex;
+    gap: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 52, 52);
+}
+div h2{
+    color: gold;
+}

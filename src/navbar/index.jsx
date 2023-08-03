@@ -5,7 +5,7 @@ import Logo from "../Assets/logo.png";
 import NavBurger from "../Assets/nav.png"
 import UserLogin from "../Assets/login.png"
 import Close from "../Assets/Frame.png"
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 class Navbar extends React.Component{
     constructor(props){
