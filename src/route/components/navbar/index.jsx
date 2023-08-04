@@ -5,22 +5,26 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <NavLink to="/home">
+      <NavLink
+        style={{ textDecoration: "none" }}
+        activeStyle={{ color: "red" }}
+        to="/home"
+        exact
+      >
         <h2>Home</h2>
       </NavLink>
 
-      <NavLink to="/about">
+      <NavLink style={{ textDecoration: "none" }} to="/about">
         <h2>About</h2>
       </NavLink>
 
-      <NavLink to="/logo">
+      <NavLink style={{ textDecoration: "none" }} to="/logo">
         <h2>Logo</h2>
       </NavLink>
 
-      <NavLink to="/contact">
+      <NavLink style={{ textDecoration: "none" }} to="/contact">
         <h2>Contact</h2>
       </NavLink>
-
     </div>
   );
 };
