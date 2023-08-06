@@ -1,30 +1,44 @@
 import React from "react";
 import "./style.css";
-import { NavLink } from "react-router-dom";
+import { NavLinks } from "./style";
 
 const Navbar = () => {
   return (
-    <div>
-      <NavLink
-        style={{ textDecoration: "none" }}
+    <div className="div">
+      
+      <NavLinks 
+        className="me"
         activeStyle={{ color: "red" }}
-        to="/home"
+        to="/"
         exact
       >
         <h2>Home</h2>
-      </NavLink>
+      </NavLinks>
 
-      <NavLink style={{ textDecoration: "none" }} to="/about">
+      <NavLinks
+        activeStyle={{ color: "red" }}
+        to="/about"
+        exact
+      >
         <h2>About</h2>
-      </NavLink>
+      </NavLinks>
 
-      <NavLink style={{ textDecoration: "none" }} to="/logo">
+      <NavLinks
+        activeStyle={{ color: "red" }}
+        to="/logo"
+        exact
+      >
         <h2>Logo</h2>
-      </NavLink>
+      </NavLinks>
 
-      <NavLink style={{ textDecoration: "none" }} to="/contact">
+      <NavLinks
+        activeStyle={{ color: "red" }}
+        to="/contact"
+        exact
+      >
         <h2>Contact</h2>
-      </NavLink>
+      </NavLinks>
+
     </div>
   );
 };
