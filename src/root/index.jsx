@@ -3,13 +3,14 @@ import React from 'react'
 // import  Fetch  from 'axios'
 import ROuterFive from '../route'
 // import { Navbar } from '../navbar'
+import { BrowserRouter } from 'react-router-dom'
 
 const Root = () => {
   return (
-    <div>
+      <BrowserRouter>
         <ROuterFive />
-    </div>
-  )
+      </BrowserRouter>
+  );
 }
 
 export default Root

@@ -1,27 +1,43 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import Contact from "./components/contact";
 import Logo from "./components/logo";
-import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 
 const ROuterFive = () => {
+  const location = useLocation()
+  console.log(location);
   return (
-    <BrowserRouter>
-      <Route path={"/about"}>
-        <Navbar />
-      </Route>
+    <div>
+        <Switch>
+          <Route exact path={"/"}>
+            <Redirect to={"/contact"} />
+          </Route>
 
-      <Route path={"/logo"}>
-        <Footer />
-      </Route>
+          <Route path={"/about"} component={Navbar} />
 
-      <Route path={"/contact"}>
-        <Header />
-      </Route>
+          <Route path={"/logo"} component={Navbar} />
 
-    </BrowserRouter>
+          <Route path={"/contact"} component={Navbar} />
+        </Switch>
+        <Switch>
+          <Route exact path={"/"} component={Footer} />
+
+          <Route path={"/about"} component={Header} />
+
+          <Route path={"/logo"} component={Logo} />
+
+          <Route path={"/contact"} component={Contact} />
+
+          <Route path={"*"}>
+            <h2>404</h2>
+            <h1>Page Not Found</h1>
+          </Route>
+        </Switch>
+      <h1>We are here: {location.pathname}</h1>
+    </div>
   );
 };
 
